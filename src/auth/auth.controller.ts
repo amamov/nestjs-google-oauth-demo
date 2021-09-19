@@ -1,5 +1,5 @@
 import { AuthService } from './services/auth.service';
-import { Controller, Get, Req, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Req, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 
 @Controller('auth')
@@ -18,7 +18,7 @@ export class AuthController {
     return this.authService.googleLogIn(req);
   }
 
-  // 쿠키 남기기 : GET "https://accounts.google.com/o/oauth2/revoke?token=" + ACCESS_TOKEN
+  // 쿠키 남기기?? : GET "https://accounts.google.com/o/oauth2/revoke?token=" + ACCESS_TOKEN
 
-  // logout : 쿠키 삭제
+  // logout : 쿠키 삭제 ??
 }
