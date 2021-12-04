@@ -5,7 +5,7 @@ export class AppController {
   @Get()
   getHello() {
     return {
-      message: 'Hello World!',
+      message: 'Hello Google OAuth 2.0!',
       auth: 'http://localhost:5000/auth',
     };
   }
